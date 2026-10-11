@@ -1,0 +1,27 @@
+{
+  "version": "0.3.0",
+  "description": "Shared local development middleware through a native WSL backend",
+  "homepage": "https://github.com/hhhxxxddd/dev-infra",
+  "license": "MIT",
+  "depends": [
+    "main/pwsh"
+  ],
+  "url": "https://github.com/hhhxxxddd/dev-infra/releases/download/v0.3.0/dev-infra-0.3.0.zip",
+  "hash": "2af42f184a75129bee876603a5bb243f91665fad145392188d7b8057a88b4946",
+  "bin": [
+    [
+      "scripts/dev-infra.ps1",
+      "dev-infra"
+    ]
+  ],
+  "installer": {
+    "script": "& pwsh -NoProfile -File \"$dir\\scripts\\install.ps1\" -AppRoot \"$dir\" -NoPath; if ($LASTEXITCODE -ne 0) { throw \"dev-infra installation failed\" }"
+  },
+  "checkver": "github",
+  "autoupdate": {
+    "url": "https://github.com/hhhxxxddd/dev-infra/releases/download/v$version/dev-infra-$version.zip",
+    "hash": {
+      "url": "https://github.com/hhhxxxddd/dev-infra/releases/download/v$version/SHA256SUMS"
+    }
+  }
+}

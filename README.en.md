@@ -10,21 +10,23 @@ A personal Scoop bucket for installation manifests of my tools and applications.
 
 On Windows, install Scoop using the [official instructions](https://github.com/ScoopInstaller/Install#installation) and run it from a non-administrator PowerShell session.
 
-Install Git and add the bucket; skip the first step if Git is already installed:
+Add the bucket and install the tools you need; skip the first line if Git is already installed:
 
 ```powershell
 scoop install git
 scoop bucket add hxd-box https://github.com/hhhxxxddd/hxd-box
+scoop install hxd-box/dev-tools
+scoop install hxd-box/dev-infra
 ```
 
-Applications can be installed once their manifests are available. See each project's README for its system requirements and dependencies.
+See each project's README for its system requirements and dependencies.
 
 ## Package roadmap
 
 | Project | Purpose | Planned package | Available |
 | --- | --- | --- | --- |
-| [dev-tools](https://github.com/hhhxxxddd/dev-tools) | Hot deployment and live updates for Windows / WSL development projects | `dev-tools` | v0.4.1 |
-| [dev-infra](https://github.com/hhhxxxddd/dev-infra) | Local development middleware, ready out of the box | `dev-infra` | Not yet |
+| [dev-tools](https://github.com/hhhxxxddd/dev-tools) | Hot deployment and live updates for Windows / WSL development projects | `dev-tools` | [v0.5.0](https://github.com/hhhxxxddd/dev-tools/releases/tag/v0.5.0) |
+| [dev-infra](https://github.com/hhhxxxddd/dev-infra) | Local development middleware, ready out of the box | `dev-infra` | [v0.3.0](https://github.com/hhhxxxddd/dev-infra/releases/tag/v0.3.0) |
 | [星空馆 · OmniGallery](https://github.com/hhhxxxddd/omnigallery) | Collect, create and edit images, audio and video, with AI tools for creation and editing | `omnigallery` | Not yet |
 
 ## Common commands
@@ -32,9 +34,8 @@ Applications can be installed once their manifests are available. See each proje
 Using `dev-tools` as an example:
 
 ```powershell
-# Search and install
+# Search
 scoop search dev-tools
-scoop install hxd-box/dev-tools
 
 # Refresh Scoop and manifests, then update the application
 scoop update

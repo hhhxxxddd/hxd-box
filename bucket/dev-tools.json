@@ -1,5 +1,5 @@
 {
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "Project discovery, preparation and native Windows/WSL development control",
   "homepage": "https://github.com/hhhxxxddd/dev-tools",
   "license": "MIT",
@@ -8,8 +8,8 @@
     "main/mise",
     "main/pwsh"
   ],
-  "url": "https://github.com/hhhxxxddd/dev-tools/releases/download/v0.4.1/dev-tools-0.4.1.zip",
-  "hash": "e917cac95db6c5feba764276de1a828c3e28e774537337b3ab173fdadaf5aa5c",
+  "url": "https://github.com/hhhxxxddd/dev-tools/releases/download/v0.5.0/dev-tools-0.5.0.zip",
+  "hash": "7b73037eff5c802defe25d9ebf3a796a7b61b49581db4045dabd6f64a8d9cd32",
   "bin": [
     [
       "scripts/scoop-entry.ps1",
