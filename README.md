@@ -1,46 +1,49 @@
-# HXD Box
+# hxd-box
 
-## 0 · 简介
+**简体中文** · [English](README.en.md)
 
-HXD Box 是我的个人 Scoop 软件合集，用来集中分发自己开发的工具和应用。
+[![Scoop](https://img.shields.io/badge/Scoop-bucket-blue)](https://scoop.sh/)
 
-添加一次软件源，即可通过 Scoop 安装、更新和卸载其中的软件。各项目的源码与发布包仍由各自仓库维护。
+个人 Scoop 软件源，集中维护自研工具和应用的安装清单。源码与发行包由各项目仓库维护。
 
-## 1 · 快速开始
+## 使用
 
-打开普通权限的 PowerShell，安装 Scoop：
+在 Windows 上按 [Scoop 官方说明](https://github.com/ScoopInstaller/Install#installation)安装 Scoop，使用普通权限的 PowerShell。
 
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-irm get.scoop.sh | iex
-```
-
-安装 Git 并添加软件源：
+安装 Git 并添加软件源；已有 Git 时可跳过第一步：
 
 ```powershell
 scoop install git
-scoop bucket add hxd https://github.com/hhhxxxddd/hxd-box
+scoop bucket add hxd-box https://github.com/hhhxxxddd/hxd-box
 ```
 
-已完成的步骤可以跳过。
+软件清单上线后即可安装对应应用。各应用的系统版本与依赖要求见对应项目的 README。
 
-常用命令：
+## 收录计划
+
+| 项目 | 用途 | 计划包名 | 上线 |
+| --- | --- | --- | --- |
+| [dev-tools](https://github.com/hhhxxxddd/dev-tools) | Windows / WSL 开发项目的热部署与热更新 | `dev-tools` | v0.4.1 |
+| [dev-infra](https://github.com/hhhxxxddd/dev-infra) | 开箱即用的本地开发中间件 | `dev-infra` | 未上线 |
+| [星空馆 · OmniGallery](https://github.com/hhhxxxddd/omnigallery) | 图像、音频、视频的收藏、创作与编辑，支持 AI 创作与编辑 | `omnigallery` | 未上线 |
+
+## 常用命令
+
+以 `dev-tools` 为例：
 
 ```powershell
-scoop search <软件名>
-scoop install hxd/<软件名>
-scoop update <软件名>
-scoop uninstall <软件名>
+# 搜索与安装
+scoop search dev-tools
+scoop install hxd-box/dev-tools
+
+# 刷新 Scoop 与软件清单，再更新应用
+scoop update
+scoop update dev-tools
+
+# 卸载应用
+scoop uninstall dev-tools
 ```
 
-## 2 · 软件清单
+更多用法见 [Scoop 使用指南](https://github.com/ScoopInstaller/Scoop/wiki/Quick-Start)。
 
-以下先作为规划占位，尚不表示已收录或可安装。
-
-| 软件 | 简介 | 计划包名 |
-|---|---|---|
-| dev-tools | Windows / WSL 本地开发管理，涵盖项目发现、工具链与开发服务管理 | dev-tools |
-| dev-infra | 开发基础设施配置与管理工具，具体功能待补充 | dev-infra |
-| 星空馆 · OmniGallery | 素材管理与浏览，结合 AI 图像、音频和视频处理能力 | omnigallery |
-
-后续按各项目的实际发布情况补充安装清单。
+清单收录与更新见[维护说明](docs/maintenance.md)。
