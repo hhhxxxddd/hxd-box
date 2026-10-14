@@ -25,7 +25,7 @@ scoop install hxd-box/dev-infra
 
 | 项目 | 用途 | 计划包名 | 上线 |
 | --- | --- | --- | --- |
-| [dev-tools](https://github.com/hhhxxxddd/dev-tools) | Windows / WSL 开发项目的热部署与热更新 | `dev-tools` | [v0.5.1](https://github.com/hhhxxxddd/dev-tools/releases/tag/v0.5.1) |
+| [dev-tools](https://github.com/hhhxxxddd/dev-tools) | Windows / WSL 开发项目的热部署与热更新 | `dev-tools` | [v0.5.2](https://github.com/hhhxxxddd/dev-tools/releases/tag/v0.5.2) |
 | [dev-infra](https://github.com/hhhxxxddd/dev-infra) | 开箱即用的本地开发中间件 | `dev-infra` | [v0.3.0](https://github.com/hhhxxxddd/dev-infra/releases/tag/v0.3.0) |
 | [星空馆 · OmniGallery](https://github.com/hhhxxxddd/omnigallery) | 图像、音频、视频的收藏、创作与编辑，支持 AI 创作与编辑 | `omnigallery` | 未上线 |
 
