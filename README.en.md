@@ -25,7 +25,7 @@ See each project's README for its system requirements and dependencies.
 
 | Project | Purpose | Planned package | Available |
 | --- | --- | --- | --- |
-| [dev-tools](https://github.com/hhhxxxddd/dev-tools) | Hot deployment and live updates for Windows / WSL development projects | `dev-tools` | [v0.5.4](https://github.com/hhhxxxddd/dev-tools/releases/tag/v0.5.4) |
+| [dev-tools](https://github.com/hhhxxxddd/dev-tools) | Hot deployment and live updates for Windows / WSL development projects | `dev-tools` | [v0.5.5](https://github.com/hhhxxxddd/dev-tools/releases/tag/v0.5.5) |
 | [dev-infra](https://github.com/hhhxxxddd/dev-infra) | Local development middleware, ready out of the box | `dev-infra` | [v0.3.0](https://github.com/hhhxxxddd/dev-infra/releases/tag/v0.3.0) |
 | [星空馆 · OmniGallery](https://github.com/hhhxxxddd/omnigallery) | Collect, create and edit images, audio and video, with AI tools for creation and editing | `omnigallery` | Not yet |
 
